@@ -249,6 +249,8 @@ display: none;
 display:flex;
 align-items:center;
 position:relative;
+margin-top:10px;
+margin-bottom:10px;
 }
 
 .search-input{
@@ -894,3 +896,72 @@ display: block;
 .ingredients-bonus ul {
     list-style-type: none;
 }
+
+
+
+
+
+
+/*RECIPE SEARCH*/
+
+
+.hero-search-page {
+    display:flex;
+    max-width:var(--width-12col);
+    width:var(--width-12col);
+    align-items:flex-start;
+    justify-content:space-between;
+    margin:0 auto 0 auto;
+    margin-top:130px;
+    padding-bottom:20px;
+    color:var(--color-light);
+    border-bottom:1px solid var(--color-light);
+}
+
+.full-search h1 {
+    color:var(--color-light);
+}
+
+.search-icon svg {
+    color:var(--color-light);
+}
+
+.search-result-article {
+    width:850px;
+    margin:0 auto 0 auto;
+    border-bottom:1px solid var(--color-light);
+    line-height:1.5;
+    padding-bottom:50px;
+    padding-top:50px;
+}
+
+.category-tag {
+    font-size:12px;
+    color:var(--color-light);
+    display:inline-block;
+    margin-bottom:10px;
+    border-left:1px solid;
+    padding-left:10px;
+}
+
+
+.category-tag .seafood {
+    border-left-color:var(--category-seafood);
+}
+
+.category-tag .seafood span {
+    color:var(--category-seafood);
+}
+
+.category-tag .chicken {
+    border-left-color:var(--category-chicken);
+}
+
+.category-tag .chicken span {
+    color:var(--category-chicken);
+}
+
+
+
+
+/*MY SITE*/
