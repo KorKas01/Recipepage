@@ -763,6 +763,14 @@ display: block;
     color: var(--color-light);
 }
 
+.hero-recipe-container-right {
+    grid-column: 6/span 5;
+    display: flex;
+    justify-content: center;
+    clip-path: circle(50% at 50% 50%);
+    margin-top: 150px;
+}
+
 .hero-recipe-text {
     grid-column:1/ span 4;
     grid-row:1;
@@ -965,3 +973,205 @@ display: block;
 
 
 /*MY SITE*/
+
+/*HERO*/
+
+.hero-mysite {
+    display:grid;
+    width:var(--width-12col);
+    max-width:var(--width-full);
+    margin: 0 auto 0 auto;
+}
+
+.hero-recipe-text h4 {
+    color: var(--color-light);
+}
+
+.hero-mysite-mealspecs {
+    margin-top:80px;
+}
+
+.hero-mysite-mealspecs-people, .hero-mysite-mealspecs-calories, 
+.hero-mysite-mealspecs-time, .hero-mysite-mealspecs-level {
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    gap:20px;
+    line-height: 30px;
+}
+
+.hero-mysite-mealspecs-people, .hero-mysite-mealspecs-calories, 
+.hero-mysite-mealspecs-time, .hero-mysite-mealspecs-level h2 {
+    font-size: 14px;
+    color: var(--color-light);
+}
+
+.hero-mysite-mealspecs svg {
+    color: var(--primary-color);
+} 
+
+.toggle-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.segmented-control {
+    position: relative;
+    display: flex;
+    background-color: var(--color-light);
+    border-radius: 8px;
+    padding: 3px;
+    width: 130px;
+    height: 36px;
+    box-sizing:border-box;
+    border: 1px solid var(--primary-color);
+}
+
+.segmented-control .segment {
+    flex: 1;
+    z-index: 2;
+    text-align: center;
+    line-height: 28px;
+    font-size: 14px;
+    cursor: pointer;
+    color: var(--color-dark);
+    font-weight: 700;
+    transition: color 0.2s ease, background-color 0.25s ease;
+    padding:0;
+    background:none;
+    border:none;
+    border-radius: 6px;
+    background-color: transparent;
+}
+
+.active-background {
+    position:absolute;
+    top:3px;
+    left:3px;
+    width: calc(50% - 3px);
+    height: calc(100% - 6px);
+    background-color: var(--primary-color);
+    border-radius: 6px;
+    transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.segmented-control .segment.active {
+    color: var(--color-light);
+    background-color: var(--primary-color);
+}
+
+
+
+
+/*INGREDIENTS*/
+
+
+
+
+.ingredients-section {
+    display: grid;
+    max-width: var(--width-12col);
+    grid-column: 1/span 6;
+    background-color: var(--background-color-dark-bg);
+    border: 2px solid var(--primary-color);
+    border-radius: 12px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.ingredients-section h2 {
+    color: var(--color-light);
+    font-size: 28px;
+    letter-spacing: 1px;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.ingredients-grid {
+    display: column;
+    gap: 40px;
+    column-count: 2;
+}
+
+.ingredients-category {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom:25px;
+}
+
+.category-header {
+    display: flex;
+    align-items: center;
+    gap:10px;
+    color: var(--color-light);
+}
+
+.category-header h3 {
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    margin-top:10px;
+    margin-bottom: 20px;
+}
+
+.category-header svg {
+    color: var(--primary-color);
+}
+
+.ingredient-list {
+    list-style: none;
+    padding:0;
+    margin:0;
+    display: flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.ingredient-list li label {
+    display: flex;
+    align-items:center;
+    gap:12px;
+    font-size:15px;
+    color:var(--color-light);
+    cursor: pointer;
+}
+
+/*INSTRUCTIONS*/
+
+.instructions-section {
+    max-width: var(--width-12col);
+    grid-column: 1/span 6;
+    background-color:var(--background-color-dark-bg);
+    border: 2px solid var(--primary-color);
+    border-radius:12px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.instructions-section h2 {
+    color: var(--color-light);
+    font-size: 28px;
+    letter-spacing: 1px;
+    margin-top: 0;
+    margin-bottom:30px;
+}
+
+.instructions-list {
+    list-style: decimal;
+    padding-left:20px;
+    margin:0;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+.instructions-list li {
+    font-size: 15px;
+    line-height:1.6;
+    color:var(--color-light) ;
+}

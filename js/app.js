@@ -8,3 +8,12 @@ document.addEventListener('DOMContentLoaded', function() {
     mobileMenu.classList.toggle('open')
     })
 })
+
+const buttons = document.querySelectorAll('.segmented-control .segment');
+
+buttons.forEach(button => {
+    button.addEventListener('click', function() {
+        buttons.forEach(btn => btn.classList.remove('active'));
+        this.classList.add('active');
+    });
+});
