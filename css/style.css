@@ -28,7 +28,11 @@
 }
 
 
+
 /*reset css*/
+
+
+
 *{
    padding: 0;
    margin: 0;
@@ -273,7 +277,13 @@ padding:10px 20px 10px 40px;
     align-items:center;
 }
 
-/* Todays recipes start*/
+
+
+
+/*TODAYS RECIPES*/
+
+
+
 .todays_recipes{
     height:fit-content;
     width:var(--width-12col);
@@ -381,7 +391,11 @@ width:var(--width-12col);
     color:var(--primary-color);
 }
 
-/* Categories section start*/
+
+
+/*CATEGORIES SECTION*/
+
+
 
 .categories {
     width: var(--width-12col);
@@ -540,7 +554,11 @@ body {
 
 }
 
-/*In the kitchen*/
+
+
+/*IN THE KITCHEN*/
+
+
 
 .kitchen_headline {
    font-size:37px;
@@ -662,7 +680,11 @@ display: block;
  }
 }
 
+
+
 /* FOOTER */
+
+
 
 .footer {
     gap:var(--grid-gap);
@@ -745,9 +767,20 @@ display: block;
 
 
 
-/*RECIPE PAGE*/
+/*RECIPE PAGEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE*/
+
+
+
+
+
+
+
+
+
 
 /*HERO*/
+
+
 
 .hero-recipe, .ingredients, .instructions, .instructions-ingredients {
     width: var(--width-12col);
@@ -910,7 +943,14 @@ display: block;
 
 
 
-/*RECIPE SEARCH*/
+/*RECIPE SEARCHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH*/
+
+
+
+
+
+
+
 
 
 .hero-search-page {
@@ -934,6 +974,37 @@ display: block;
     color:var(--color-light);
 }
 
+.search-filter {
+    background-color: rgba(237, 237, 237, 0.3);
+    -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
+    border-radius:5px;
+    padding: 24px;
+    color: var(--background-color-light);
+    max-width:650px;
+}
+
+.search-filter h2 {
+    font-size: 24px;
+    margin-bottom:20px;
+}
+
+.search-filter ul {
+    list-style:none;
+    padding:0;
+    margin:0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px 100px;
+}
+
+.search-filter li {
+    display: flex;
+    align-items: center;
+    gap:12px;
+    color: var(--color-light);
+}
+
 .search-result-article {
     width:850px;
     margin:0 auto 0 auto;
@@ -943,38 +1014,62 @@ display: block;
     padding-top:50px;
 }
 
+.search-result-article h2 {
+    font-size:22px;
+    font-weight:700;
+    color: var(--primary-color);
+}
+
+.search-result-article p {
+    font-size:16px;
+    font-weight:400;
+    color:var(--color-light);
+}
+
 .category-tag {
     font-size:12px;
     color:var(--color-light);
     display:inline-block;
     margin-bottom:10px;
-    border-left:1px solid;
     padding-left:10px;
 }
 
 
-.category-tag .seafood {
-    border-left-color:var(--category-seafood);
+.seafood {
+    border-left: 1px solid var(--category-seafood);
 }
 
-.category-tag .seafood span {
+.category-tag-seafood {
     color:var(--category-seafood);
 }
 
-.category-tag .chicken {
-    border-left-color:var(--category-chicken);
+.chicken {
+    border-left: 1px solid var(--category-chicken);
 }
 
-.category-tag .chicken span {
+.category-tag-chicken {
     color:var(--category-chicken);
 }
 
 
 
 
-/*MY SITE*/
+
+
+
+
+
+
+/*MY SITEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE*/
+
+
+
+
+
 
 /*HERO*/
+
+
 
 .hero-mysite {
     display:grid;
@@ -997,7 +1092,8 @@ display: block;
     justify-content:flex-start;
     align-items:center;
     gap:20px;
-    line-height: 30px;
+    font-weight:bold;
+    line-height: 1.5;
 }
 
 .hero-mysite-mealspecs-people, .hero-mysite-mealspecs-calories, 
@@ -1065,21 +1161,19 @@ display: block;
 
 
 
-
 /*INGREDIENTS*/
-
 
 
 
 .ingredients-section {
     display: grid;
     max-width: var(--width-12col);
-    grid-column: 1/span 6;
     background-color: var(--background-color-dark-bg);
     border: 2px solid var(--primary-color);
     border-radius: 12px;
     padding: 30px;
     box-sizing: border-box;
+    margin: 40px auto;
 }
 
 .ingredients-section h2 {
@@ -1141,11 +1235,15 @@ display: block;
     cursor: pointer;
 }
 
+
+
 /*INSTRUCTIONS*/
+
+
 
 .instructions-section {
     max-width: var(--width-12col);
-    grid-column: 1/span 6;
+    margin: 0 auto;
     background-color:var(--background-color-dark-bg);
     border: 2px solid var(--primary-color);
     border-radius:12px;
