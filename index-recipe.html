@@ -22,8 +22,24 @@
                 <li><a href="index-recipe-mysite.html">MY SITE</a></li>
             </ul>   
             </div>
-            
+            <div class="hamburger-menu">
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16">
+	                    <path d="M0 0h16v16H0z" fill="none" />
+	                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m2.75 12.25h10.5m-10.5-4h10.5m-10.5-4h10.5" />
+                    </svg>
+                </span>
+            </div>
         </nav>
+
+        <!--MOBILE NAVIGATION-->
+        <div class="mobile-menu">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="index-recipe.html">RECIPES</a></li>
+                <li><a href="index-search.html">SEARCH</a></li>
+            </ul>   
+        </div>
 
         <!--Hero-->
 
@@ -61,40 +77,51 @@
                         Beginner
                     </span>
                  </div>
+                <div class="ingredients">
+                    <h1>INGREDIENTS</h1>
+                    <ul>
+                        <li>1/4 cup extra virgin olive oil</li>
+                        <li>1 medium yellow or white onion, chopped</li>
+                        <li>2 carrots, peeled and chopped</li>
+                        <li>4 garlic cloves, pressed or minced</li>
+                        <li>2 teaspoons ground cumin</li>
+                        <li>1 teaspoon curry powder</li>
+                        <li>1/2 teaspoon dried thyme</li>
+                        <li>1 large can (28 ounces) diced tomatoes, lightly drained</li>
+                        <li>4 cups vegetable broth</li>
+                        <li>2 cups water</li>
+                        <li>1 teaspoon salt, more to taste</li>
+                        <li>Pinch of red pepper flakes</li>
+                        <li>Freshly ground black pepper, to taste</li>
+                        <li>1 cup chopped fresh collard greens or kale, tough ribs removed</li>
+                        <li>1 to 2 tablespoons lemon juice (½ to 1 medium lemon), to taste</li>
+                    </ul>
+                </div>
+            <div class="print-favourite">
+                <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 32 32">
+                        <path d="M0 0h32v32H0z" fill="none" />
+                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 25H2V9h28v16h-5M7 19v11h18V19ZM25 9V2H7v7m15 5h3" />
+                    </svg>
+                    Print
+                </button>
+                <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none" />
+                        <g fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="1.5">
+                            <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12s4.477 10 10 10s10-4.477 10-10Z" />
+                            <path d="M7 10.75C7 13.823 12 17 12 17s5-3.177 5-6.25C17 9.231 15.947 8 14.5 8c-.75 0-1.5.265-2.5 1.324C11 8.264 10.25 8 9.5 8C8.053 8 7 9.231 7 10.75Z" />
+                        </g>
+                    </svg>
+                    Favourite
+                </button>
+            </div>
                 </div>
                 <div class="hero-recipe-container-right">
                     <div class="hero-recipe-container-right-image">
                         <img src="https://picsum.photos/450/450" alt="Recipe Image">
                     </div>
                 </div>
-            </div>
-            
-
-            <div class="ingredients">
-                    <h1>INGREDIENTS</h1>
-                <ul>
-                    <li>1/4 cup extra virgin olive oil</li>
-                    <li>1 medium yellow or white onion, chopped</li>
-                    <li>2 carrots, peeled and chopped</li>
-                    <li>4 garlic cloves, pressed or minced</li>
-                    <li>2 teaspoons ground cumin</li>
-                    <li>1 teaspoon curry powder</li>
-                    <li>1/2 teaspoon dried thyme</li>
-                    <li>1 large can (28 ounces) diced tomatoes, lightly drained</li>
-                    <li>4 cups vegetable broth</li>
-                    <li>2 cups water</li>
-                    <li>1 teaspoon salt, more to taste</li>
-                    <li>Pinch of red pepper flakes</li>
-                    <li>Freshly ground black pepper, to taste</li>
-                    <li>1 cup chopped fresh collard greens or kale, tough ribs removed</li>
-                    <li>1 to 2 tablespoons lemon juice (½ to 1 medium lemon), to taste</li>
-                </ul>
-            </div>
-            <div class="print-favourite">
-                BUTTONS
-            </div>
-            <div class="circle-image">
-                IMAGE
             </div>
         </div>
 
@@ -128,8 +155,11 @@
         <!--BONUS INSTRUCTIONS AND INGREDIENTS-->
 
         <div class="instructions-ingredients">
-            <div class="instructions-bonus">
+            <div class="bonus-section-header">
                 <h1>INSTRUCTIONS (BONUS)</h1>
+                <h1>INGREDIENTS</h1>
+            </div>
+            <div class="instructions-bonus">
                 <ol>
                     <li>
                         <span>STEP 1</span>
@@ -171,7 +201,6 @@
                 </ol>
             </div>
             <div class="ingredients-bonus">
-                <h1>INGREDIENTS</h1>
                 <ul>
                     <li>¼ cup extra virgin olive oil</li>
                     <li>1 medium yellow or white onion, chopped</li>
@@ -191,7 +220,6 @@
                     <li>1 to 2 tablespoons lemon juice (½ to 1 medium lemon), to taste</li>
                 </ul>
             </div>
-            <div class="section-divider"></div>
         </div>
         
         
@@ -289,5 +317,6 @@
 
 
     </div>
+    <script src="js/app.js"></script>
 </body>
 </html>
